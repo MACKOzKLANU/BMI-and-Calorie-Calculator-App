@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="BMICALCULATOR">BMICALCULATOR</string>
+    <string name="caloriers_calculator">Calculate calories</string>
+</resources>

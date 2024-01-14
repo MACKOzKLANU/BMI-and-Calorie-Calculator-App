@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/age_editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="number"
+        android:shadowColor="#808080"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textAlignment="center"
+        android:textColor="#1C3400"
+        app:layout_constraintEnd_toEndOf="@+id/height_textView2"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/height_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/height_textView2" />
+
+    <TextView
+        android:id="@+id/height_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="age"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gender_switch"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/gender_switch"
+        app:layout_constraintTop_toBottomOf="@+id/gender_switch" />
+
+    <TextView
+        android:id="@+id/height_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="height (cm)"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/height_editTextNumber"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/height_editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/age_editTextNumber" />
+
+    <TextView
+        android:id="@+id/weight_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="weight (kg)"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/weight_editTextNumber"
+        app:layout_constraintEnd_toEndOf="@+id/weight_editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/weight_editTextNumber" />
+
+    <EditText
+        android:id="@+id/height_editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="number"
+        android:shadowColor="#808080"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textAlignment="center"
+        android:textColor="#1C3400"
+        app:layout_constraintEnd_toEndOf="@+id/age_editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/age_editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/height_textView" />
+
+    <EditText
+        android:id="@+id/weight_editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="number"
+        android:shadowColor="#808080"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textAlignment="center"
+        android:textColor="#1C3400"
+        app:layout_constraintEnd_toEndOf="@+id/height_editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/height_editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/height_editTextNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonstyle"
+        android:shadowColor="#808080"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:text="Calculate BMI"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/weight_editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/weight_editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/weight_editTextNumber" />
+
+    <TextView
+        android:id="@+id/result_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/additional_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/result_textView"
+        app:layout_constraintStart_toStartOf="@+id/result_textView"
+        app:layout_constraintTop_toBottomOf="@+id/result_textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="If your BMI is less than 18.5, it falls within the underweight range. If your BMI is 18.5 to less than 25, it falls within the healthy weight range. If your BMI is 25.0 to less than 30, it falls within the overweight range. If your BMI is 30.0 or higher, it falls within the obesity range."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_health_and_safety_24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Calories_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonstyle"
+        android:shadowColor="#808080"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:text="@string/caloriers_calculator"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/additional_textView" />
+
+    <TextView
+        android:id="@+id/calories_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/Calories_Button"
+        app:layout_constraintStart_toStartOf="@+id/Calories_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Calories_Button" />
+
+    <Switch
+        android:id="@+id/gender_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="Man/Woman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
