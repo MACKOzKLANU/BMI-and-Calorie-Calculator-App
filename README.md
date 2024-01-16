@@ -58,5 +58,3 @@ If you would like to contribute to the project, feel free to fork the repository
 Special thanks to contributors and third-party libraries used in this project.
 
 ---
-
-Feel free to customize this README to fit your specific project structure and details. Update placeholders such as `yourusername` and include relevant information about your app.
